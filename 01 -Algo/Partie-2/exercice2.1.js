@@ -12,35 +12,20 @@
 //Appuyez sur une touche pour quit ter.
 
 
-Variable float 
-
-Kilometres, miles, result
-
-DEBUT
 
 
-var text = 'Saisir une valeur en Kilomètre :', number= 
-var Kilometres;
-var Miles; 
-var result = Kilometres * 1.60
-var calcul =
 
-Kilometres = ('Saisir une valeur en Kilomètre:');
-result = Kilometres * 1,60934
+let Kilometres = 0;
+let Miles = 0 ; 
+let result = 0;
 
 
-console.log(result);
+ do {
+     Kilometres = Math.round(Math.random()) * 1,60934  ;
+    //Kilometres= parseInt("Saisir une valeur comprise entre 0,01 et  1000000"); 
+    result = Kilometres * 1,60934 ;
+}
 
-
- 
-//let variable1 = "kilomètre";
-//let variable2 = "Miles";
-//var resultat = "Kilomètre " + "Miles";
-
-//console.log(text);
-//console.log(alert);
-//console.log(variable1);
-//console.log(variable2);
-//console.log(resultat);
-
-
+while (Kilometres  > 1000000);  {
+    console.log("saisir une nouvelle valeur ");
+}
