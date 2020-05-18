@@ -11,21 +11,42 @@
 //17 Kilomètres = 10.5655 Miles
 //Appuyez sur une touche pour quit ter.
 
+//const readline = require (" readline" ) ;
+//const rl = readline ({
+   // inpit: ProcessingInstruction.toString,
+  //  output: ProcessingInstruction.stdout
+//});
 
 
 
 
-let Kilometres = 0;
-let Miles = 0 ; 
-let result = 0;
 
+
+//declaration de Variables
+let input ;
+let result ;
+input = entree_utilisateur;
+result = input * 1,60;
+
+
+//algo 
 
  do {
-     Kilometres = Math.round(Math.random()) * 1,60934  ;
-    //Kilometres= parseInt("Saisir une valeur comprise entre 0,01 et  1000000"); 
-    result = Kilometres * 1,60934 ;
-}
+    
+        console.log ("veuillez saisir un nombre entre 0.01 et 1 000 000 ");
+        input = entree_utilisateur
+        if ( entree_utilisateur < 0.01 || entree_utilisateur> 1000000){
+           result = input * 1,60;
+           
+        }
+    
+     else {
+        console.log("saisir une nouvelle valeur ");
+    
+     } 
 
-while (Kilometres  > 1000000);  {
-    console.log("saisir une nouvelle valeur ");
-}
+
+
+ }while ( ! ( entree_utilisateur < 0.01  || entree_utilisateur > 1000000));
+
+
