@@ -19,9 +19,6 @@
 
 
 
-
-
-
 //declaration de Variables
 let input ;
 let result ;
