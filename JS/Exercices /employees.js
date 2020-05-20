@@ -39,8 +39,60 @@
  */
 class Employee
 {
-    // A vous de jouer...
-}
+    Employee { 
+        id: 1,
+        lastname: 'Trump',
+        firstname:'Donald ',
+        role:'creator of Fake News',
+        salary:500000,
+        hireDate:'2017-01-20',
+        email:'dtrump@email.fr'
+    }
+    {
+        Employee{
+            id: 2,
+            lastname: ' Obama',
+            firstname:'Barack',
+            role:'creator of hope',
+            salary:1000000,,
+            hireDate:'2009-01-20',
+            email:'bobama@email.fr'
+        }
+
+        {
+            Employee{
+                id: 3,
+                lastname: 'Bush',
+                firstname:'George',
+                role:'responsable of Guantanamo',
+                salary: 100000,
+                hireDate:'2001-01-20',
+                email:'gbush@email.fr'
+            }
+
+            {
+                Employee{
+                    id: 4,
+                    lastname: 'Clinton',
+                    firstname:'Bill',
+                    role:'assistant of Lewinsky',
+                    salary: 50000,
+                    hireDate:'1993-01-20',
+                    email:'bcliton@email.fr'
+                }
+
+                {
+                    Employee{
+                        id: 5,
+                        lastname: 'Reagan',
+                        firstname:'Ronadl',
+                        role:'Actor',
+                        salary:10000,
+                        hireDate:'1981-01-20',
+                        email:'rreagan@email.fr'
+                    }
+                
+
 
 
 
@@ -63,3 +115,4 @@ console.log(employees); // export des employés dans la console
 
 
 // Écrivez votre code à partir de la ligne suivante...
+
