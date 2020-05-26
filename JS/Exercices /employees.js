@@ -40,35 +40,43 @@
 class Employee {
 
     // Employee = class Employee {
-        constructor(id, lastname, firstname, role, salary, hireDate, email) {
-            this.id = id
-            this.lastname = lastname;
-            this.firstname = firstname;
-            this.role = role;
-            this.salary = salary;
-            this.hireDate = hireDate;
-            this.email = firstname.substring(0,1).toLowerCase()+ lastname.toLowerCase()+ "email.fr";
+    constructor(id, lastname, firstname, role, salary, hireDate, email) {
+        this.id = id
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.role = role;
+        this.salary = salary;
+        this.hireDate = hireDate;
+        this.email = firstname.substring(0, 1).toLowerCase() + lastname.toLowerCase() + "email.fr";
+
+    }
+
+    getsalary() {
+
+        return Math.round((this.salary / 12) * 0.75);
+    }
+
+    getSenority() {
+
+        let actualDate = new Date();
+        let hiringDate = new Date(this.hireDate);
+        let time = actualDate.getDate - hiringDate.getDate;
+        let year = 0;
+        let month = 0;
+        let day = 0;
+
+
+        if (time < 0) {
+            return " This employee never worked here";
 
         }
 
- getsalary (){
-
-    return Math.round((this.salary / 12) * 0.75);
- }
-
-getSenority() {
-
-let actualDate = new date();
-let hiringDate = new date (this.hireDate);
-let time = actualDate - hiringDate ;
-let year = 0;
-let month = 0;
-let day = 0;
-
-    //return 
+        if (time > ) {
 
 
-}
+        }
+
+    }
 
 }
 
@@ -80,10 +88,10 @@ let day = 0;
 
 
 /** @var Employee employee1 */
-var employee1 = new Employee(1,'Trump', 'Donald ', 'creator of Fake News',500000, new Date ('2017-01-20'))
+var employee1 = new Employee(1, 'Trump', 'Donald ', 'creator of Fake News', 500000, new Date('2017-01-20'))
 
 /** @var array employees */
-const employees = [employee1,]; // tableau contenant les employés
+const employees = [employee1, employee2, employee3, employee4, employee5]; // tableau contenant les employés
 
 console.log(employee1); // doit afficher l'objet "employee1"
 console.log("Il y a " + employees.length + " employé(e)s."); // doit afficher "Il y a 5 employé(e)s."
@@ -96,10 +104,10 @@ console.log(employees); // export des employés dans la console
 
 // Écrivez votre code à partir de la ligne suivante...
 
-var employees2 = new Employee (2,' Obama','Barack','creator of hope',1000000, new date ('2009-01-20'))
-var employees3 = new Employee (3,'Bush','George','responsable of Guantanamo',100000,new date ('2001-01-20'))          
-var employees4 = new Employee (4,'Clinton', 'Bill','assistant of Lewinsky', 50000, new date ('1993-01-20'))
-var employees5 = new Employee (5, 'Reagan','Ronadl','Actor',10000, new date('1981-01-20'))
+var employee2 = new Employee(2, ' Obama', 'Barack', 'creator of hope', 1000000, new Date('2009-01-20'))
+var employee3 = new Employee(3, 'Bush', 'George', 'responsable of Guantanamo', 100000, new Date('2001-01-20'))
+var employee4 = new Employee(4, 'Clinton', 'Bill', 'assistant of Lewinsky', 50000, new Date('1993-01-20'))
+var employee5 = new Employee(5, 'Reagan', 'Ronadl', 'Actor', 10000, new Date('1981-01-20'))
 
-employees.push (employees2, employees3,employees4,employees5);
-console.log (employees);
+employees.push(employee2, employee3, employee4, employee5);
+console.log(employees);
