@@ -58,8 +58,12 @@ class Employee {
 
 getSenority() {
 
-
-
+let actualDate = new date();
+let hiringDate = new date (this.hireDate);
+let time = actualDate - hiringDate ;
+let year = 0;
+let month = 0;
+let day = 0;
 
     //return 
 
@@ -76,10 +80,10 @@ getSenority() {
 
 
 /** @var Employee employee1 */
-var employees1 = new Employee(1,'Trump', 'Donald ', 'creator of Fake News',500000, new Date ('2017-01-20'))
+var employee1 = new Employee(1,'Trump', 'Donald ', 'creator of Fake News',500000, new Date ('2017-01-20'))
 
 /** @var array employees */
-const employees = [employee1]; // tableau contenant les employés
+const employees = [employee1,]; // tableau contenant les employés
 
 console.log(employee1); // doit afficher l'objet "employee1"
 console.log("Il y a " + employees.length + " employé(e)s."); // doit afficher "Il y a 5 employé(e)s."
@@ -97,3 +101,5 @@ var employees3 = new Employee (3,'Bush','George','responsable of Guantanamo',100
 var employees4 = new Employee (4,'Clinton', 'Bill','assistant of Lewinsky', 50000, new date ('1993-01-20'))
 var employees5 = new Employee (5, 'Reagan','Ronadl','Actor',10000, new date('1981-01-20'))
 
+employees.push (employees2, employees3,employees4,employees5);
+console.log (employees);
