@@ -49,11 +49,17 @@ class Enterprise {
 
     /**
      * Supprime un employé 
-     * L'opérateur delete permet de retirer une propriété d'un objet.
+     * 
      * @param int _id 
      */
     delete(_id) {
-
+        employee.delete('/collections/:collectionName/:id', (req, res, next) => {
+            req.collection.remove({_id: id(req.params.id)}, (e, result) => {
+             if (e) return next(e)
+             // console.log(result)
+             res.send((result.result.n === 1) ? {msg: 'success'} : {msg: 'error'})
+            })
+           })
     }
 
 
