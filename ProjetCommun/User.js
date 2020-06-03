@@ -12,7 +12,16 @@ class User {
 
     }
 
+    isValid( ){
+        return true ; 
+    }
+   
+   
 
+
+
+    
+    console.log(username)
 
 
 }
