@@ -62,8 +62,11 @@ class Enterprise
         let emp = this.employees.find(emp => emp.id === parseInt(_id));
 
         if(emp !== undefined) {
+
+            
             // retourner une copie de l'employé
             // cloner l'objet : let copie = Object.assign()
+            const 
             // moteur de recherche : MDN JS object assign
             // moteur de recherche newbie: JS cloner objet
         }
