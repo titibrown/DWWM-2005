@@ -1,62 +1,67 @@
 class User {
 
-    constructor(_username, _password, _email, _creationDate, _lastLogged, _isLogged) {
-
-        this.username = _username || "";
+    constructor(_nom, _prenom, _username, _password, ) {
+             this._nom =
+            this._prenom =
+            this.username = _username || "";
         this.password = _password;
-        this.email = _email;
-        this.creationDate = parseint(_creationDate);
-        this.lastLogged = _lastLogged;
-        this.isLogged = _isLogged;
+        this.email = // premiere lettre du prenom , Nnom & arfp;
+            this.creationDate = parseint(_creationDate); // objet date
+        this.lastLogged = _lastLogged; // penser au type
+        this.isLogged = false;
 
 
     }
-    get _username() {
+    get_username() {
         return this._username;
     }
-    get _password() {
+    get_password() {
         return this._password
     }
-    get _email() {
+    get_email() {
         return this._email
     }
-    get _creationDate() {
+    get_creationDate() {
         return this._creationDate
     }
 
-    get _lastLogged() {
+    get_lastLogged() {
         return this._lastLogged
     }
 
-    get _isLogged() {
+    get_isLogged() {
         return this._isLogged
     }
 
-    set _username(_username) {
+    set_username(_username) {
         this._username = _username;
     }
-    set _password(_password) {
+    set_password(_password) {
         this._password = _password;
     }
-    set _email(_email) {
+    set_email(_email) {
         this._email = _email;
     }
-    set _creationDate(_creationDate) {
+    set_creationDate(_creationDate) {
         this._creationDate = _creationDate;
     }
 
-    set _lastLogged(_lastLogged) {
+    set_lastLogged(_lastLogged) {
         this._lastLogged = _lastLogged;
     }
 
-    set _isLogged(_isLogged) {
+    set_isLogged(_isLogged) {
         this._isLogged = _isLogged;
     }
 
 }
 
-const User = new User ()
+let test = new User('_nom' )
 
+console.log
+console.log(test.get_creationDate)
+
+module.exports = User;
 
 
 
