@@ -1,14 +1,16 @@
 class User {
 
-    constructor(_nom, _prenom, _username, _password, ) {
-             this._nom =
-            this._prenom =
-            this.username = _username || "";
+    constructor(_name, _firstname, _username, _password, _email) {
+        this._name = _name || " ";
+        this._firstname = _firstname || "";
+        this.username = _username || "";
         this.password = _password;
-        this.email = // premiere lettre du prenom , Nnom & arfp;
-            this.creationDate = parseint(_creationDate); // objet date
-        this.lastLogged = _lastLogged; // penser au type
+        this.email = this._email;
+        this.creationDate = new date();
+        this.lastLogged = new date();
         this.isLogged = false;
+
+
 
 
     }
@@ -33,6 +35,18 @@ class User {
         return this._isLogged
     }
 
+    get_name() {
+        return this._name
+
+    }
+
+    get_firstname() {
+
+        return this._firstname
+    }
+
+    set_name 
+
     set_username(_username) {
         this._username = _username;
     }
@@ -56,10 +70,8 @@ class User {
 
 }
 
-let test = new User('_nom' )
 
-console.log
-console.log(test.get_creationDate)
+
 
 module.exports = User;
 
