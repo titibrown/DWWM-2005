@@ -1,19 +1,25 @@
 class User {
 
     constructor(_name, _firstname, _username, _password, _email) {
-        this._name = _name || " ";
-        this._firstname = _firstname || "";
+        this.lastname = _name || " ";
+        this.firstname = _firstname || "";
         this.username = _username || "";
         this.password = _password;
-        this.email = this._email;
-        this.creationDate = new date();
-        this.lastLogged = new date();
+        this.email = _email;
+        this.creationDate = new Date();
+        this.lastLogged = new Date();
         this.isLogged = false;
 
-
-
+    }
+    get_Name() {
+        return this._name
 
     }
+
+    get_FirsName() {
+        return this._firstname
+    }
+
     get_username() {
         return this._username;
     }
@@ -35,17 +41,15 @@ class User {
         return this._isLogged
     }
 
-    get_name() {
-        return this._name
 
+
+    set_name(_name) {
+        this._name = _thisname;
     }
 
-    get_firstname() {
-
-        return this._firstname
+    set_firstname(_firstname) {
+        this._firstname = _firstname
     }
-
-    set_name 
 
     set_username(_username) {
         this._username = _username;
