@@ -12,63 +12,63 @@ class User {
 
     }
     get_Name() {
-        return this._name
+        return this._name;
 
     }
 
     get_FirsName() {
-        return this._firstname
+        return this._firstname;
     }
 
-    get_username() {
+    get_UserName() {
         return this._username;
     }
-    get_password() {
-        return this._password
+    get_PassWord() {
+        return this._password;
     }
-    get_email() {
-        return this._email
+    get_Email() {
+        return this._email;
     }
-    get_creationDate() {
-        return this._creationDate
-    }
-
-    get_lastLogged() {
-        return this._lastLogged
+    get_CreationDate() {
+        return this._creationDate;
     }
 
-    get_isLogged() {
-        return this._isLogged
+    get_LastLogged() {
+        return this._lastLogged;
+    }
+
+    get_IsLogged() {
+        return this._isLogged;
     }
 
 
 
-    set_name(_name) {
+    set_Name(_name) {
         this._name = _thisname;
     }
 
-    set_firstname(_firstname) {
+    set_FirstName(_firstname) {
         this._firstname = _firstname
     }
 
-    set_username(_username) {
+    set_UserName(_username) {
         this._username = _username;
     }
-    set_password(_password) {
+    set_Password(_password) {
         this._password = _password;
     }
-    set_email(_email) {
+    set_Email(_email) {
         this._email = _email;
     }
-    set_creationDate(_creationDate) {
+    set_CreationDate(_creationDate) {
         this._creationDate = _creationDate;
     }
 
-    set_lastLogged(_lastLogged) {
+    set_LastLogged(_lastLogged) {
         this._lastLogged = _lastLogged;
     }
 
-    set_isLogged(_isLogged) {
+    set_IsLogged(_isLogged) {
         this._isLogged = _isLogged;
     }
 
