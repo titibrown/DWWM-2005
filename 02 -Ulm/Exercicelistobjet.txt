@@ -48,3 +48,8 @@ relation avec le systeme bancaire.
  La vitesse de la lumière
 
 / Je ne penses pas que la vitesse peut etre définit comme objet 
+``
+
+
+
+Etat d'une bouteille 
