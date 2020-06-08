@@ -1,71 +1,84 @@
 class User {
 
-    constructor(_name, _firstname, _username, _password, _email) {
-        this._name = _name || " ";
-        this._firstname = _firstname || "";
+    constructor(_lastname, _firstname, _username, _password, _email) {
+        this.lastname = _lastname || "";
+        this.firstname = _firstname || "";
         this.username = _username || "";
         this.password = _password;
-        this.email = this._email;
-        this.creationDate = new date();
-        this.lastLogged = new date();
+        this.email = _email;
+        this.creationDate = new Date();
+        this.lastLogged = new Date();
         this.isLogged = false;
 
 
 
 
-    }
-    get_username() {
-        return this._username;
-    }
-    get_password() {
-        return this._password
-    }
-    get_email() {
-        return this._email
-    }
-    get_creationDate() {
-        return this._creationDate
-    }
 
-    get_lastLogged() {
-        return this._lastLogged
-    }
+        // ############### GETTERS ###############
 
-    get_isLogged() {
-        return this._isLogged
-    }
 
-    get_name() {
-        return this._name
+    }
+    get_Name() {
+        return this._name;
 
     }
 
-    get_firstname() {
-
-        return this._firstname
+    get_FirsName() {
+        return this.firstname;
     }
 
-    set_name 
-
-    set_username(_username) {
-        this._username = _username;
+    get_UserName() {
+        return this.username;
     }
-    set_password(_password) {
-        this._password = _password;
+    get_PassWord() {
+        return this.password;
     }
-    set_email(_email) {
-        this._email = _email;
+    get_Email() {
+        return this.email;
     }
-    set_creationDate(_creationDate) {
-        this._creationDate = _creationDate;
+    get_CreationDate() {
+        return this.creationDate;
     }
 
-    set_lastLogged(_lastLogged) {
-        this._lastLogged = _lastLogged;
+    get_LastLogged() {
+        return this.lastLogged;
     }
 
-    set_isLogged(_isLogged) {
-        this._isLogged = _isLogged;
+    get_IsLogged() {
+        return this.isLogged;
+    }
+
+
+    // ############### SETTERS ###############
+
+
+    set_Name(_name) {
+        this._name = thisname;
+    }
+
+    set_FirstName(_firstname) {
+        this._firstname = firstname
+    }
+
+    set_UserName(_username) {
+        this._username = username;
+    }
+    set_Password(_password) {
+        this._password = password;
+    }
+    set_Email(_email) {
+        this._email = email;
+    }
+    set_CreationDate(_creationDate) {
+        this._creationDate = creationDate;
+    }
+
+    set_LastLogged(_lastLogged) {
+        this._lastLogged = lastLogged;
+    }
+
+    set_IsLogged(_isLogged) {
+        this._isLogged = isLogged;
     }
 
 }
@@ -74,10 +87,6 @@ class User {
 
 
 module.exports = User;
-
-
-
-
 
 
 
