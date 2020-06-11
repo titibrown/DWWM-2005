@@ -62,7 +62,7 @@ class Enterprise
         let emp = this.employees.find(emp => emp.id === parseInt(_id));
 
         if(emp !== undefined) {
-            let copie = Object.assign(new Employee(), emp);
+            let copie = Object.assign(new Employee());
             return copie;
             
             // retourner une copie de l'employé

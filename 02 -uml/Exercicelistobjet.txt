@@ -48,8 +48,25 @@ relation avec le systeme bancaire.
  La vitesse de la lumière
 
 / Je ne penses pas que la vitesse peut etre définit comme objet 
-``
 
 
 
-Etat d'une bouteille 
+Etat d'une bouteille : 
+
+
+Ouvert
+Ouvert vide
+Ouvert et Rempli
+
+Fermer
+Fermer vide
+Fermer Rempli
+
+Vide
+Vide Fermer
+vide et Ouverte
+
+
+Rempli
+Rempli et Fermer
+Rempli et ouvert
