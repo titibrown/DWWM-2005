@@ -1,1 +1,1 @@
-import User from './Models/user.js';
+import User from './user.js';
