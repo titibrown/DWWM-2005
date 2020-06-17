@@ -1,38 +1,6 @@
 
- * JAVASCRIPT: Exercices
-    * 
- * Types de "Point"
-
-class Wall {
 
 
-    constructor(material) {
-
-
-        this.material(string);
-    }
-}
-
-class Door {
-
-constructor (isopen){
-
-    this.isopen (Boolean)
-}
-
-}
-    
-    
-
-
-
-/**
- * 
- *  - Une porte (Door) possédant
- *      . un attribut supplémentaire avec accesseur et sans mutateur
- *          isOpen : bool
- *      . une méthode supplémentaire
- *          openClose() : bool
  *  - Un chemin (Path) possédant
  *      . 2 attributs supplémentaires avec accesseur et mutateur
  *          player : bool
