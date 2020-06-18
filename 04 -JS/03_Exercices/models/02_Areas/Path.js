@@ -14,7 +14,7 @@ class Path {
     constructor(player, nbPassages) {
 
         this.player = player
-        this.nbPassages = nbPassages;
+        this.nbPassages = ;
 
     }
 
