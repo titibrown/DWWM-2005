@@ -102,16 +102,20 @@ module.exports = Employee;
 
 /*
 getSeniority_Masoud() {
+
         let now = new Date();
         //let embaucheDate = this.hiredate;
         
         let diff = now.getTime() - this.hiredate.getTime();
         diff = Math.floor(diff/(1000*60*60*24));
         let ans = Math.floor(diff / 365.25);
+
         diff  = diff - ans*365.25;
         let mois = Math.floor(diff/(365.25/12));
+
         diff = Math.round(diff - mois*(365.25/12));
         let jour = diff;
+
         if(jour > 0 && mois > 0 && ans > 0){
             return ans + " ans et " + mois + " mois et " + jour + " jours";
         }else if(jour > 0 && mois > 0 && ans == 0){
@@ -123,6 +127,7 @@ getSeniority_Masoud() {
             return "L'employé est un alien";
         }
     }
+
     getSeniority_Aurelien() {
         let now = new Date();
         let diff = now.getTime() - this.hiredate.getTime();
@@ -130,6 +135,7 @@ getSeniority_Masoud() {
         let month = year/12;
         let day = year/365.25;
         let result = "";
+
         if(diff < 0) {
             return "L'employé vient du futur.";
         }
@@ -144,5 +150,7 @@ getSeniority_Masoud() {
             result += Math.floor(diff/day) + " ";
             return result;
         }
+
     }
+
 */

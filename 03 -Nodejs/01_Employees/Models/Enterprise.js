@@ -5,7 +5,7 @@ const fs = require('fs'); // import du module FileSystem
 const path = require('path');
 
 /* Chargement de la classe "Employee" */
-const Employee = require('./Employee.js.js');
+const Employee = require('./Employee.js');
 
 /**
  * @class Employee

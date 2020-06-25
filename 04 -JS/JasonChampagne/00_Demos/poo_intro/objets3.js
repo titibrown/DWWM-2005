@@ -1,3 +1,4 @@
+
 let obj1 = {}; // syntaxe litérale
 let obj2 = new Object();
 let obj3 = Object(); // non recommandé

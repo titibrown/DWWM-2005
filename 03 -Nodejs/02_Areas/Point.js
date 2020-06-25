@@ -1,4 +1,4 @@
-/**
+ /**
   * La classe "Point" représente les coordonnées d'un point dans une zone à 2 dimensions
   */
  class Point 

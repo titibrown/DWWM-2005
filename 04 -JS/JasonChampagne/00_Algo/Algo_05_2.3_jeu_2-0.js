@@ -14,16 +14,21 @@
     FONCTIONS
         // rien
     VARIABLES
+
     choix_joueur EST UN ENTIER
     choix_ia EST UN ENTIER
     score_joueur EST UN ENTIER
     score_ia EST UN ENTIER
+
     DEBUT
+
         TANT QUE (score_ia EST INFERIEUR A 10) ET (score_joueur EST INFERIEUR A 10) ET (choix_joueur EST SUPERIEUR OU EGAL A 0)
         FAIRE
+
             choix_ia <-- RANDOM
             
             ÉCRIRE "Choisissez un chiffre entre 0, 1 et 2"
+
             LIRE choix_joueur
         
             SI choix_joueur EST INFERIEUR A 0 ALORS
@@ -41,15 +46,20 @@
                     ÉCRIRE "Aucun point attribué !"
                 FIN SI
             FIN SI
+
         FIN TANT QUE
     
+
         ÉCRIRE "Le score de l'ia est: ", score_ia
         ÉCRIRE "Le score du joueur est:", score_joueur
+
+
         SI score_ia EST SUPÉRIEUR A score_joueur ALORS
             ÉCRIRE "L'ia à gagné"
         SINON
             ÉCRIRE "Le joueur à gagné"
         FIN SI
+
     FIN
 */
 
