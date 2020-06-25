@@ -38,10 +38,9 @@ Dépendance quand une classe utilise une autre classe, par exemple
 comme membre ou comme paramètre d'une de ces
 fonctions, elle "dépend" ainsi de cette classe. Une
 M. Grimaldi – février 2007 – page 1/14
-relation de dépendance est représentée par une flèche
+relation de dépendance est représentée par une flèche pointillée.
 
 
-pointillée.
 Agrégation
 les agrégations indiquent une relation de contenantcontenu. Elle décrite par une relation "possède". Une
 relation d'agrégation est représentée par une ligne
