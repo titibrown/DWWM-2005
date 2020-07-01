@@ -1,1 +1,9 @@
-test
+Git clone + url 
+
+
+git branche 
+
+
+git checkout 
+
+
