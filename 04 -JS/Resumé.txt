@@ -1,0 +1,18 @@
+ L'instruction JavaScript  console.log()   permet d'afficher une information.
+Une valeur est un morceau d'information. Le type d'une valeur détermine son rôle et les opérations qui lui sont applicables.
+Le langage JavaScript dispose du type nombre (number) pour représenter une valeur numérique entière ou réelle, et du type chaîne de caractères (string) pour représenter un texte.
+Une valeur de type texte est délimitée par une paire de guillemets simples '  ...  '  ou doubles "  ...  ".
+Les opérateurs  +  ,  -  ,  *  et  /  permettent de réaliser des opérations arithmétiques entre deux nombres. Appliqué à deux chaînes, l'opérateur  +  les fusionne en une seule. Cette opération est appelée concaténation.
+Un programme informatique se compose de plusieurs lignes de code qui s'exécutent successivement.
+Les commentaires (  // ...   ou   /* ... */   ) sont des portions de code non exécutées. Ils permettent de documenter le fonctionnement d'un programme.
+
+
+* Une variable est une zone de stockage d'information. Chaque variable possède un nom, une valeur et un type. En JavaScript, le type d'une variable est déduit implicitement de sa valeur, et non pas défini explicitement. Il s'agit d'un langage à typage dynamique.
+On déclare une variable JavaScript avec le mot-clé  let  suivi du nom de la variable. Si la valeur initiale d'une variable n'est pas destinée à changer, on utilise de préférence le mot-clé  const  pour déclarer une variable constante.
+L'opérateur d'affectation  =  permet de donner une valeur à une variable. Dans le cas d'une variable de type nombre, on peut utiliser l'opérateur  +=  pour augmenter et l'opérateur  ++  pour incrémenter (augmenter de 1) sa valeur.
+La portée (scope) d'une variable représente la portion du code source dans laquelle cette variable est utilisable. Les variables définies avec  let  et  const  ont une portée de type bloc : elles ne sont utilisables qu'à l'intérieur du bloc de code dans lequel elles sont définies. Un bloc de code est délimité par une paire d'accolades ouvrante et fermante.
+Une expression est un morceau de code combinant des variables, des valeurs et des opérateurs. L'évaluation d'une expression produit une valeur et correspond à un certain type.
+On peut inclure des expressions dans une chaîne de caractères délimitée par une paire d'accents graves seuls (   `...`  ). Ces chaînes sont appelées modèles de libellés (template literals).
+Des conversions de type peuvent avoir lieu implicitement lors de l'évaluation d'une expression, ou bien explicitement avec les instructions  Number()  et  String()  qui convertissement respectivement une expression en un nombre et en une chaîne.
+Les instructions   prompt()  et   alert()  permettent respectivement de faire saisir et d'afficher une information sous la forme d'une boîte de dialogue. Elles ne fonctionnent que dans le contexte d'un navigateur web.
+Il est essentiel de bien nommer ses variables et d'adopter une convention de nommage, comme par exemple camelCase. 
