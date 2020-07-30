@@ -1,5 +1,6 @@
 // import
 
+
 import express from 'express';
 
 // instantiate server 
@@ -21,6 +22,7 @@ resizeTo.status(200).send(<h1>welcome on my server</h1>);
 
 
 server.listen(8080, function(){
-console.log('flex');
+console.log('server is listening');
 
 })
+
