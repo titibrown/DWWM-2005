@@ -1,7 +1,7 @@
 // import
 
 
-import express from express;
+const express = require('express');
 
 // instantiate server 
 
@@ -13,7 +13,8 @@ var server = express ();
 
 server.get('/', function (req, res) {
 res.setHeader('content-Type', 'text/html');
-resizeTo.status(200).send(<h1>welcome on my server</h1>);
+resizeTo.status(200).send("<h1>welcome on my server</h1>");
+// CHAINE DE CARACTÈRE EN ""
 
 });
 
