@@ -11,7 +11,7 @@ var server = express ();
 //configure
 // Fonction callback (req = request res = response) 
 
-server.get('/', function (req, res) {
+server.get('/', function (request, response) {
 res.setHeader('content-Type', 'text/html');
 resizeTo.status(200).send("<h1>welcome on my server</h1>");
 // CHAINE DE CARACTÈRE EN ""
