@@ -12,7 +12,7 @@ body
 }
 h1, h2,h3,h4
 {
-  color: #444;  
+  color: rgb(192, 30, 78);  
 }
 h1
 {
@@ -99,6 +99,7 @@ header nav ul li a
 {
     height: 580px;
     background: url('images/main.jpg') center;
+   
 }
 #main-image h2
 {
@@ -152,16 +153,16 @@ header nav ul li a
 }
 #step-1
 {
-    background: url('images/steps-icon-1.png') no-repeat top center;
+    background: url('images/coco+scrunchie+front+1.jpg')  center;
 }
 #step-2
 {
-    background: url('images/steps-icon-2.png') no-repeat top center;
+    background: url('images/Mia+Scrunchie+frønt.jpg') center;
     
 }
 #step-3
 {
-    background: url('images/steps-icon-3.png') no-repeat top center;
+    background: url('images/yasmine+scrunchie+light.jpg')  center;
 }
 
 
@@ -295,40 +296,62 @@ footer h1
 
 
 
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
 
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+}
 
+#slides figure {
+    display: inline-block;
+    width: 100vw;
+    max-height: 100%;
+    margin: 0;
+}
 
+#slides figure img {
+    width: 100%;
+    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#slides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.5em 0;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+@keyframes slide {
+    0%, 20%, 100% {
+        left: 0; /*1ère image*/
+    }
+    35%, 50% {
+        left: -100vw; /*2ème image*/
+    }
+    70%, 95% {
+        left: -200vw; /*3ème image*/
+    }
+}
+#slides {
+    /*... Code précédent ...*/
+    /*CSS3 keyframes animation*/
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
