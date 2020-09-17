@@ -26,13 +26,14 @@ h2 {
 h3 {
     font-size: 60px;
     position: absolute;
-    bottom: 500px;
-    right: 650px;
+    bottom: 200px;
+    right: 800px;
 }
 
 h4 {
     font-size: 24px;
 }
+
 
 .parareveur {
     position: absolute;
@@ -134,22 +135,8 @@ header nav ul li a {
     margin: 70px;
 
 }
-.conteneur img {
-    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-    -webkit-transition: all 2 ease; /* Safari et Chrome */
-    -moz-transition: all 2 ease; /* Firefox */
-    -ms-transition: all 2 ease; /* Internet Explorer 9 */
-    -o-transition: all 2 ease; /* Opera */
-    transition: all 2 ease;
-    }
-    .conteneur :hover img {
-    /* L'image est grossie de 25% */
-    -webkit-transform:scale(4); /* Safari et Chrome */
-    -moz-transform:scale(4); /* Firefox */
-    -ms-transform:scale(4); /* Internet Explorer 9 */
-    -o-transform:scale(4); /* Opera */
-    transform:scale(4);
-    }
+
+   
 
 
 
@@ -405,4 +392,27 @@ footer h1 {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
+
+
+.newin {
+    font-size: 60px;
+    position: absolute;
+    bottom: 400px;
+    right: 900px;
+
+}
+
+
+.imagescrunchy {
+
+    width: 100;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    bottom: 50px;
+    margin: 70px;
+}
+
 
