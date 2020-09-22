@@ -43,16 +43,23 @@ $unEntier = 0b111111; ( Ecriture Binaire)
 $unEntier = 0xAFD35C; ( Ecriture Hexadecimal)
 $unEntier = 0640 (Octal)
 
+
+
+<?php
+echo "<h2>PHP is Fun!</h2>";
+echo "Hello world!<br>";
+echo "I'm about to learn PHP!<br>";
+echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+?>
+
+
+
+
+
 */
 
 $monPrenom = "Gina";
 echo "bonjour $monPrenom";
-
-
-
-
-
-
 
 
 
