@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=PRXy1yA6O7w
 Booléen (bollean, bool)         : True or False
 Entier (integer, int)           : 14, -126, 12300
 Flottant (float , double )      :3.14, 12.62
-Chaine de caractère (string)    : "bonjour"
+Chaine de caractère (string)    : "bonjour"xm ou pourcentage 
 
 
 4 types composés : 
@@ -60,6 +60,7 @@ echo "This ", "string ", "was ", "made ", "with multiple parameters.";
 
 $monPrenom = "Gina";
 echo "bonjour $monPrenom";
+
 
 
 
