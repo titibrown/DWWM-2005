@@ -5,8 +5,9 @@
 
 # Arithmétiques : + , -, * , /, %, **
 # Fonction utiles : intdiv() , fmod()
-
-
+# Affection : =, +=, -=, *=; %=
+# Concaténation : ., .=
+# Logiques : and, &&,or,xor,
 
 $age = 25;
 echo 'Tu as ' .$age. ' ans ';
@@ -28,7 +29,52 @@ $result = $number1 % $number2;
 
 $result = $number1 ** $number2;
 
-echo $result; 
+
+#affectation
+
+$number1 = 2;
+$number2 *= 4; 
+
+$number1 = 2;
+$number2 += 4; 
+
+echo $result;
+
+#Concaténation 
+
+$strA = "Bonjour";
+$strB ="tout le monde";
+
+$res = $strA.$strB; # Variable Intermédiaire , optimisation
+
+echo $strA.$strB;
+ 
+
+
+$chaine = "";
+echo $chaine;
+
+$chaine .= "A";
+$chaine.="B";
+echo $chaine;
+
+
+# Logiques 
+
+
+$a = true;
+$b = true;
+
+$a = true;
+$b = false;
+
+
+$a = true;
+$b = true;
+$c = false;
+
+echo $a and $b;
+echo $a or $b;
 
 
 
