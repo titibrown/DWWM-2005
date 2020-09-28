@@ -97,7 +97,7 @@ echo"OK";
 */
 
 
-$number=10;
+$number=1;
 
 if ($number > 0)
 {
@@ -105,7 +105,9 @@ if ($number > 0)
     {
         if ($number > 10 )
 
-            echo "Plus grand que 10 ";
+    
+        echo "Plus grand que 10 ";
+
         echo "Plus grand que 5";
     }
 
