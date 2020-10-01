@@ -1,5 +1,4 @@
-use tp_agences_voyages;
-
+use tp_agence_voyages;
 
 -- Créer les vues répondant aux demandes suivantes :
 
@@ -44,9 +43,6 @@ JOIN countries ON cities.country_code = countries.country_code;
 SELECT * FROM info_reservations
 
 
-
-
-
 -- 3) Créer la vue permettant d'afficher :
 --     Toutes les informations d'un client (sauf son mot de passe)
 --     Le  nom de son commercial associé
@@ -55,8 +51,11 @@ SELECT * FROM info_reservations
 
 
 
-DROP VIEW IF EXISTS info_clients
+DROP VIEW IF EXISTS info_clients;
 
+
+
+CREATE VIEW info_clients 
 AS
 SELECT 
 client_id ,
@@ -66,5 +65,9 @@ client_email ,
 client_phone ,
 client_added ,
 com_name,
-FROM orders
+SELECT SUM(order_quantity) FROM orders WHERE orders.order_paid > 0 AND 
 
+
+
+
+select * from info_clients;
