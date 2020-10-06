@@ -61,3 +61,16 @@ SMTP : Transfer Email
 APIS REST HTTP 
 
 Interface de programmation basé sur HTTP 
+
+
+
+Protocoles FTP 
+
+
+
+Echange de fichier 
+
+
+Envoie du site web sur le serveur 
+
+
