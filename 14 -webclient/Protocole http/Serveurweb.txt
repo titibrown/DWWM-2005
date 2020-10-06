@@ -1,0 +1,23 @@
+
+
+
+Serveur web = Serveur informatique permet de stocker et publier des pages web sur
+ internet ou intranet souvent écriant en html
+
+ Requête =  Réponse 
+
+
+ Serveur web  stock des fichier consitituant un site web : html css javascript 
+
+
+ Serveur webstatique : Envoie de fichier tel quel 
+                     : Contient un OS et un serveur HTTP 
+                     : Serveur ou daemon Http 
+                     : Base de données
+                     : Langague de script 
+
+Serveur Dynamique : Les Fichiers hébergés sont mise a jours avant d'etre envoyé au client via HTTP 
+
+
+
+

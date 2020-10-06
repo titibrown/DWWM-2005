@@ -1,0 +1,34 @@
+Présentable accesible et sécurisé 
+
+
+Fournis des services aux applications.
+
+
+Le serveur d'application est un logiciel d'infrastructure offrant un contexte d'execution pour des composants applicatifs
+facilitant ainsi le développement et le déploiement du code applicatif 
+
+
+
+Bases de données 
+
+
+Gestion de Transaction 
+
+
+connexion au systeme d'information de l'entreprise 
+
+
+Sécurité : Gestion d'authentification 
+
+
+Clustering : Service de haute disponibilité 
+
+
+Principaux serveurs d'applications
+
+
+WebSphere 
+Oracle
+Jboss
+Apache
+GlassFish
