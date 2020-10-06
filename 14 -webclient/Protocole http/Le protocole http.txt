@@ -1,0 +1,63 @@
+
+
+
+Hypertext Transfer Protocol (HTTP) est un protocole de la couche application servant à transmettre 
+des documents hypermédia, comme HTML. Il a été conçu pour communiquer entre les navigateurs web et 
+les serveurs web, bien qu'il puisse être utilisé à d'autres fins. Il suit le modèle classique client-serveur,
+ un client ouvre une connexion, effectue une requête et attend jusqu'à recevoir une réponse. Il s'agit
+  aussi d'un protocole sans état, ce qui signifie que le serveur ne conserve aucune donnée (on parle d'état) 
+  entre deux requêtes. Bien que généralement basé sur une couche TCP/IP, HTTP peut aussi être utilisé 
+  sur toute couche de transport fiable, garantissant qu'aucune donnée ne peut être perdue en chemin,
+   contrairement à UDP par exemple.
+   
+
+$$$$$$$$$$$$$$$$$
+
+
+REQUETE = REPONSE 
+
+
+
+$$$$$$$$$$$$$$$$$
+
+
+
+CODE STATUS RETOUR
+Consituer une requete 
+
+
+
+Web et Protocoles 
+
+https://www.youtube.com/watch?v=Ds7TvEvM9z4&ab_channel=albidayaville
+
+1 : Permet la communication entre Machines 
+
+2 : Protocoles Bas niveau 
+Tcpip : Vint cerf (pere d'internet )
+Page Web, Email , +++++
+
+UDC 
+Crypté et sécurisé
+
+3 :Protocoles haut niveau
+Surcouche 
+
+Permet la transition d'information
+
+
+Protocoles
+
+
+HTTP : Page Web , client /Serveur, basé sur TCP 
+https : Pareil que HTTP mais crypté et sécurisé 
+FTP : Transfer Fichier
+SMTP : Transfer Email
+
+
+
+4 :Protocoles Très haut niveau 
+
+APIS REST HTTP 
+
+Interface de programmation basé sur HTTP 
