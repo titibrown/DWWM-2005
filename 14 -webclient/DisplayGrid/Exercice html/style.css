@@ -1,0 +1,36 @@
+body {font-family: Arial, Helvetica, sans-serif;
+
+background-color: rgb(165, 159, 159);
+
+
+}
+
+
+h1 {
+margin: 0 auto; 
+padding: 0 ;
+color: white;
+
+}
+
+
+h2 {
+
+color: #e42b17;
+font-size: 2em;
+
+}
+
+main-title{
+
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+    grid-auto-rows: 150 px;
+    grid-template-rows: 200px;
+    
+    
+    }
