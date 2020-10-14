@@ -1,12 +1,23 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {font-family: sans-serif;}
-p {color: #666;}
+p {color: rgb(70, 66, 66);}
+
+
+body {
+
+    background: gray;
+}
+
+
+
 
 header {
     padding: 20px;
+    background-color: rgb(224, 221, 221);
 }
 
 img {
@@ -26,9 +37,9 @@ h2 {
     font-size: 2em;
     font-weight: 300;
     text-align: center;
-    color: #e74c3c;
+    color: #f7eae9;
     font-size: 2em;
-    
+    background: rgb(204, 39, 10);
 }
 
 .container {
@@ -46,6 +57,8 @@ border: 1px solid rgb(204, 39, 10);
 justify-content: space-around;
 align-items: stretch;
 width: 800px;
+text-align: center;
+background: white;
 
 }
 
