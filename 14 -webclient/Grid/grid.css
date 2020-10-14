@@ -3,21 +3,23 @@
     
 }
 
-body {font-family: sans-serif;}
+
 p {color: rgb(70, 66, 66);}
 
 
 body {
 
     background: gray;
+    font-family: sans-serif;
+    
 }
 
 
-
-
-header {
+.main-header {
     padding: 20px;
-    background-color: rgb(224, 221, 221);
+    background: #e74c3c;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    
 }
 
 img {
