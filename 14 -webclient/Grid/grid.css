@@ -2,29 +2,48 @@
     box-sizing: border-box;
 }
 
+body {font-family: sans-serif;}
+p {color: #666;}
+
 header {
     padding: 20px;
 }
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
-
+h2 {
+    font-size: 2em;
+    color: #e74c3c; 
+    
+    
+  }
+  .main-title {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    color: #e74c3c;
+    font-size: 2em;
+    
+}
 
 .container {
 display: grid;
 grid-template-columns: 200px 200px 200px ;
-grid-auto-rows: 150 px;
-grid-template-rows: 200px;
+grid-auto-rows: 200 px;
+grid-template-rows: 400px;
 margin-left: auto;
 margin-left: auto;
 max-width: 100%;
 margin-left: auto;
 margin-right: auto;
 padding: 10px;
-border: 1px solid #00C;
-justify-content: space-between;
+border: 1px solid rgb(204, 39, 10);
+justify-content: space-around;
 align-items: stretch;
 width: 800px;
 
