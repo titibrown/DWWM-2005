@@ -53,6 +53,8 @@ HTTP : Page Web , client /Serveur, basé sur TCP
 https : Pareil que HTTP mais crypté et sécurisé 
 FTP : Transfer Fichier
 SMTP : Transfer Email
+SFTP : Transfer Fichier
+
 
 
 
