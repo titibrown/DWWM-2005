@@ -25,7 +25,7 @@ if ($number == 14)
 
 }
 
-if ($number === 14) #identique 
+if ($number === 14) #identique et si le type est identique 
 
 {
 
