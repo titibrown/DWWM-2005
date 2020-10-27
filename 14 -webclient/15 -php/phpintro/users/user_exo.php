@@ -28,23 +28,43 @@
             $id =$_GET ['id'] ?? 0;
 
             $id=intval($id);
-            
-            echo $id;
 
-            if($id){
+
+
+            if($id > 0){
+
+            $statement=$dbConnect->query ("SELECT * FROM users WHERE user_id =$id");
+
+            $user=$statement->fetch();
+            var_dump($user);
+
             
-            $pdo=$dbConnect->prepare('SELECT * FROM users WHERE user_name =:user_name ');
-            
-                echo '';
+            if ($user){
+
+                echo $user['user_name'];
+
+
             }
+            else{
+                echo 'aucun utilisateurs';
+            }
+          
+            }
+
+
+
             else {
-            
-            echo "all users "; 
-            
-            }
-                    
-            
+                $statements=$dbConnect->query("SELECT $ FROM users");
+                $users=$statements->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($users as $user);
+                {
 
+                echo $user['user_name'];
+
+            }
+            }
+
+        ?>
         ?>
 
 
