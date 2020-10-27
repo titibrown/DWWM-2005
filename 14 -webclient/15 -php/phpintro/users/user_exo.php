@@ -8,10 +8,10 @@
 
         <?php 
             // Data Source Name = Chaine de connexion 
-            $dsn = 'mysql:host=localhost;port=3306;dbname=db_users_simple;charset=utf8';
+            $dsn = 'mysql:host=127.0.0.1;port=8889;dbname=db_users_simple;charset=utf8';
 
             /** @var PDO $dbConnect */
-            $dbConnect = new PDO($dsn, 'root', '');
+            $dbConnect = new PDO($dsn, 'root', 'root');
 
             /**
              * CONSIGNES :
@@ -24,23 +24,26 @@
              * 
              */
 
-            function get_bweb_user_link($user_id){
 
-                if (!$user = 'get_userdata'($user_id))
-                return false ; 
-                $name = $user->date->display_name;
-                $login = $user->date->user_login;
-                $link = ''.$name.'';
-                return $link;
+            $id =$_GET ['id'] ?? 0;
 
+            $id=intval($id);
+            
+            echo $id;
+
+            if($id){
+            
+            $pdo=$dbConnect->prepare('SELECT * FROM users WHERE user_name =:user_name ');
+            
+                echo '';
             }
-
-
-        function get_bweb_user_link($user_id){
-        print get_bweb_user_link($user_id);
-
-    }
-
+            else {
+            
+            echo "all users "; 
+            
+            }
+                    
+            
 
         ?>
 
