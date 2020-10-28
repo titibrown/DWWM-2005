@@ -31,24 +31,18 @@
 
 
 
-            if($id > 0){
+            if ($id > 0) {
+                $statement=$dbConnect->query("SELECT * FROM users WHERE user_id =$id");
 
-            $statement=$dbConnect->query ("SELECT * FROM users WHERE user_id =$id");
-
-            $user=$statement->fetch();
-            var_dump($user);
+                $user=$statement->fetch();
+                var_dump($user);
 
             
-            if ($user){
-
-                echo $user['user_name'];
-
-
-            }
-            else{
-                echo 'aucun utilisateurs';
-            }
-          
+                if ($user) {
+                    echo $user['user_name'];
+                } else {
+                    echo 'aucun utilisateurs';
+                }
             }
 
 
