@@ -27,11 +27,6 @@ case"Portugal":
 break;
 default;
 
-case"Tout autre pays":
-    return "Inconnu";
-break;
-
-
 }
 
 
