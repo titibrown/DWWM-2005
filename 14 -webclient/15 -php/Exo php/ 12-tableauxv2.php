@@ -4,10 +4,8 @@ $tableau = array ('Reda','John','dahoud','Tim');
 
 function DernierElementTableau (array $tableau){
 
-   $tableau = 
-   return 
-   
-    }
+
+    } 
 
 
 

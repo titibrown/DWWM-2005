@@ -13,7 +13,7 @@
 function concatenationV2 ($lastname, $firstname){
 
 
-    return strtolower($lastname) . " " . strtoupper($firstname);
+    return strtoupper($lastname) . " " .strtolower ($firstname);
 }
 
 echo concatenationV2('Brown','Timothy')
