@@ -1,9 +1,11 @@
 <?php
 
-$tableau = array('Reda','John','dahoud','Tim');
+$tableau = array ('Reda','John','dahoud','Tim');
 
 function DernierElementTableau (array $tableau){
 
+   $tableau = 
+   return 
    
     }
 

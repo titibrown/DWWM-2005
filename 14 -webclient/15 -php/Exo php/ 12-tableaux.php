@@ -15,6 +15,8 @@ function PremierElementTableau (array $tableau){
 return $tableau[0];
 
     }
+
+    echo $tableau;
 }
 
 
