@@ -46,11 +46,24 @@ $number = 6;
 
 }
 
-$number = 14; #"ok"
+$number = 14; #"ok" 
 ma_fonction ($number);
 echo $number;
 
 
 
 ?>
+
+
+
+function ma_fonction (int $var1, string $var2 = " truc ")
+{
+
+
+}
+
+
+ma_fonction(14);
+ma_fonction(6,"bonjour");
+
 
