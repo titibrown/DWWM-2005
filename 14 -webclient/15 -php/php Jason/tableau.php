@@ -1,4 +1,12 @@
+
+
+
 <?php
+
+#Création de Tableau, modification d'une valeur dans un tableau 
+#Parcour de tableau = foreach 
+
+
 
 $tab_pop_villes = [
 
@@ -10,11 +18,11 @@ $tab_pop_villes = [
 
 
 echo '<pre>';
-echo $tab_pop_villes["Collonge"];
+echo $tab_pop_villes["Collonge"]; # Pour modifier la valeur : $tab_pop_villes ["Collonge"] = 129;
 echo '<pre>';
 
 
-
+#######################################################################
 
 ?>
 
@@ -37,11 +45,16 @@ print_r( $tab_integers) ;
 echo'<pre>';
 
 
-
+######################################################################
 
 ?>
 
 <?php
+
+# 
+
+
+
 
 $tab_integers1= [
 
@@ -60,6 +73,30 @@ print_r( $tab_integers1) ;
 echo'<pre>';
 
 
+
+
+?>
+
+
+?>
+
+<?php
+
+# 
+
+
+
+
+$tab_integers1= [
+
+    "Collonge" => 64,
+    "Nogent"=> 19,
+
+];
+
+
+foreach ($tab_pop_villes as $data)
+echo'<p>' .$data. '<p>';
 
 
 ?>
