@@ -7,11 +7,10 @@ $b = 10;
 
 
 
-function Multiplication (int $a, int $b){
+function multiplication (int $a, int $b){
 
 
     return $a * $b ;
 }
-
-
+echo $multipication;
 ?>

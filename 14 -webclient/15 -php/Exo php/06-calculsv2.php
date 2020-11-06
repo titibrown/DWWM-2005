@@ -6,14 +6,15 @@
 //echo $result
 
 
-function Soustraction(int $a , int $b){
+function soustraction(int $a , int $b){
 
 return $a - $b ;
 
 }
 
-
+echo $soustraction;
 
 ?>
 
 
+ 

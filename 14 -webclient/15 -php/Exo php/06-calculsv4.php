@@ -14,7 +14,9 @@ function Division (int $a, int $b){
 
     
 }
-
+echo $division
 
 
 ?>
+
+
