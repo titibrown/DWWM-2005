@@ -1,10 +1,10 @@
 <?php
 
-$tab = 
 
-function (Html_List){
 
-while(list())
+function (st){
+
+
 
 }
 
@@ -13,7 +13,7 @@ while(list())
 
 
 
-<h3> Liste des personnes</h3>
+echo "<h3> Liste des personnes</h3>"
 
 <ul>
 
