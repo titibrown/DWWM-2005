@@ -4,8 +4,8 @@
 
 class Card {
 
-private$_name;
-private $_description ; 
+protected $_name;
+protected  $_description ; 
 
 
 public function __construct ($_name, $_description){
@@ -22,13 +22,30 @@ public function hello( ){
     
 }
 
-class TrapCard extends {
+class TrapCard extends Card {
+
+    private $_effect;
+
+    public function __construct($_name,$_description,$_effect)
+{
+    parent:: __construct($name,$description);
+    $this->_effect = $effect,
+}
+
+}
+
+
 
 public function hello (){
 
 
-    echo 'je suis une TrapCard';
-    echo $this->_name;
+    //echo 'je suis une TrapCard';
+    //echo $this->_name;
+
+echo'Nom : ' .$this->name. '<br>';
+echo 'Description : '.$this->_desciption. '<br>';
+echo 'Effet :' .$this->_effect. '<br>';
+
 }
 
 }
@@ -38,5 +55,5 @@ public function hello (){
 // $mycard ->hello();
 
 
-$mytrapcard = new TrapCard ('fosse'.' une grosse fosse bloque tout les enemis'); 
+$mytrapcard = new TrapCard ('fosse'.' une grande grosse fosse','bloque tout les enemis sur  le terrain '); 
 $mycard ->hello();
