@@ -8,7 +8,7 @@ class Personne {
     private $_age;
     private $_id;
     private $_adresse;
-    private $_
+    
     
     public function __construct (string $_nom, string $_prenom, string $_sexe, int $_age, int $_id, string $_adresse){
 
