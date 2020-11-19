@@ -14,14 +14,4 @@ public function __construct (string $marque, string $modele, int $poids = '1000'
    $this->_poids = $poids;
    $this->_maxspeed = $maxspeed;
 
-
-
-
-   public function Vitessemaximum($maxspeed){
-
-
-
-    return $this->_maxspeed = $marque.$maxspeed - $poids * 30% ;
-       
-       }
-}
+  }
