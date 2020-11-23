@@ -38,7 +38,7 @@ plus modifiable ensuite.
     public function __construct(int $id, string $adresse)
     {
 
-         setId($id);
+        $this->setId($id);
 
         $this->adresse = $adresse;
 
@@ -77,11 +77,11 @@ plus modifiable ensuite.
     {
 
         $info = "Le client numéro $this->_id  $this->_prenom $this->_nom possède l'adresse suivant $this->_adresse ";
-        return $info; 
+        
 
     }
     
-    
+        return $info;
 
     }
 

@@ -4,11 +4,12 @@ class Voiture{
    protected string $_marque;
    protected string $_modele;
    protected string $_poids;
+   private Moteur $_moteur;
    // protected int $_maxspeed ;
 
    ################## CONSTRUCTOR ##################
-   public function __construct (string $marque, string $modele, int $poids ) {
-      $thisSetMarque($marque);
+   public function __construct (string $marque, string $modele, int $poids $newMoteur ) {
+      SetMarque($marque);
       SetModele($modele);
       SetPoids($poids);
    }
@@ -16,7 +17,7 @@ class Voiture{
    ################## SETTERS ##################
    public function SetMarque ($marque){
       if (empty($marque)){
-         $this->_marque = 'undefined';
+         $this->_marque = 'undefined'; // a corriger preciser le plus possible l'erreur
       }
       else {
          $this->_marque = $marque;

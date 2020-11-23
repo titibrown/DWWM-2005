@@ -5,6 +5,7 @@ class Intervenant extends Personne  {
     private float  $_salaire;
     //private string $_poste;
     private float $_revenue;
+    
 
     public function __construct( string $poste, float $revenue, float $salaire)
     {
@@ -44,24 +45,25 @@ class Intervenant extends Personne  {
     }
 
 
-    public function calculeCharge(float $salaire, float $revenue, string $age, $autrerevenue )
+    public function calculeCharge(float $salaire, float $revenue, )
     {   
             
 
-            if ($age<'55')
+            if ($age<=55)
 
     {
-            $this->($salaire + 20 %) +  ($autrerevenue + 15 %) ; 
+            return  $this->_salaire  *  20 / 100) +  ($autrerevenue * 15 / 100 ) ; 
       
     }   else
     
     {
 
              $this->($salaire + 10 %) + ($autrerevenue + 7.5 %);
+             return $calculeCharge ; 
 
     }      
 
-            return $calculeCharge ; 
+            
 
 }
 
