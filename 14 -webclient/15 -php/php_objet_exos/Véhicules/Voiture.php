@@ -1,14 +1,14 @@
 <?php
 
 class Voiture{
-   protected $_marque;
-   protected $_modele;
-   protected $_poids;
-   // protected $_maxspeed ;
+   protected string $_marque;
+   protected string $_modele;
+   protected string $_poids;
+   // protected int $_maxspeed ;
 
    ################## CONSTRUCTOR ##################
    public function __construct (string $marque, string $modele, int $poids ) {
-      SetMarque($marque);
+      $thisSetMarque($marque);
       SetModele($modele);
       SetPoids($poids);
    }

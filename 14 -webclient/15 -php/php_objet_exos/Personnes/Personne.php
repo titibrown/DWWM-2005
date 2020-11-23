@@ -1,131 +1,100 @@
 <?php
 
-class Personne {
+/**
+ * Classe Personne
+ * 
+ * Cette classe représente une personne
+ * Exemple d'utilisation : 
+ * $personne = new Personne('nom', 'prenom', nex DateTime('2020-11-01'));
+ * 
+ * @author Tim
+ * @version 0.0.1
+ * @abstract
+ * @copyright 2020 Tim, inc
+ * @license MIT
+ * Copyright 2020 <Tim, inc>
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ * 
+*/
+class Personne
+{
+    /** @var string $_nom Le nom de la personne */
+    private string $_nom;
 
-    private $_nom;
-    private $_prenom;
-    private $_sexe;
-    private $_age;
-    private $_id;
-    private $_adresse;
+    /** @var string $_prenom Le prenom de la personne */
+    private string $_prenom;
+
+    /** @var string $_age L'age de la personne */
+    private int $_age;
+
+
+    /** 
+     * Constructeur de la classe
+     * @param string $nom Le nom de la nouvelle personne 
+     * @param string $prenom Le prénom de la nouvelle personne
+     * @param DateTime $datenaissance 
+     */
+    public function __construct(string $nom, string $prenom, DateTime $datenaissance)
+    {
+        $this->setNom($nom);
+
+        $this->_prenom = $prenom;
+
+        $today = new DateTime(); // new DateTime sans paramètre = date du jour
+
+        $diff = $today->diff($datenaissance); // différence entre la date du jour et la date de naissance
+
+        $this->_age = $diff->y; // le nombre d'années de différence = l'age de la personne
+    }
+
+    /** 
+     * Retourne le nom de la personne
+     * @return string le nom de la personne
+     */
+    public function getNom(): string
+    {
+        return $this->_nom;
+    }  
+
+    /** 
+     * Retourne l'age de la personne
+     * @return int l'age de la personne
+     */
+    public function getAge(): int
+    {
+        return $this->_age;
+    }
     
-    
-    public function __construct (string $_nom, string $_prenom, string $_sexe, int $_age, int $_id, string $_adresse){
+    /**
+     * Retourne le prénom de la personne
+     * @return string Le prénom de la personne 
+     */
+    public function getPrenom(): string 
+    {
+        return $this->_prenom;
+    }
+
+    /**
+     * Redéfinir le nom de la personne
+     * @param string $nom Le nouveau de la personne 
+     * @return Personne L'instance actuelle
+     * @throws Exception Le nom est vide
+     */
+    public function setNom(string $nom) : self
+    {
+        // Si le nom est vide, on lève une exception avec le message d'erreur à remonter en paramètre.
+        // cette exception sera "attrapée" dans le code utilisant cette métohde (voir test.php)
+        if(empty($nom)) {
+            throw new Exception("Le nom est vide !");
+            // lorsqu'une exception est levée, l'exécution de la méthode s'interrompt.
+        }
 
         $this->_nom = $nom;
-        $this->_prenom = $prenom; 
-        $this->_sexe = $sexe ;
-        $this->_age = $age;
-        $this->_id =$id;
-        $this->_adresse = $adresse;
-        
-}
-#Setter 
 
-
-public function SetAdress ($adresse){
-
-$this->_adresse = $adresse;
-
-}
-
-public function SetPrenom($prenom){
-$this->_prenom =$prenom;
-
-}
-
-public function SetSexe($sexe){
-$this->_sexe= $sexe;
-
-}
-
-public function SetAge($age){
-
-$this->_age = $age; 
-
-}
-
-public function SetId($id){
-
-$this->_id = $id;
-
-
-}
-
-
-public function SetAdresse($adresse){
-
-$this->_adresse=$adresse;
-
-
-}
-
-#Getter 
-
-
-public function GetNom (){
-
-return $this->$nom ;
-
-}
-
-
-public function GetPrenom(){
-
-return $this->$prenom;
-
-}
-
-public function GetSexe(){
-
-return $this->$sexe;
-
-}
-
-
-public function GetAge (){
-
-    return $this->$age;
-
-}
-
-
-public function GetId(){
-
-return $this->$id;
-
-}
-
-
-public function GetAdresse(){
-
-return $this->$adresse;
-
-}
-
-public function AddAdresse($adresse){
-
-$this->_adresse [] = $adresse;
-
-}
-
-
-public function DisplayAdresses(){
-    $resulut ="";
-    foreach ($this->adresses as $adresse){
-        $result .=$adresse. " ";
+        return $this;
     }
-return $result
-
-}
-
-public function __toString(){
-
-
-return "$nom : $this->_nom $prénom : $this->_prenom _age : "
-."$this->age adresse : {$this->DisplayAdresses()}";
-
 }
 
 
-}
