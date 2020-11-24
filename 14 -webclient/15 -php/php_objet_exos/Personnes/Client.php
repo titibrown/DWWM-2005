@@ -1,5 +1,10 @@
 <?php 
 
+
+require 'Adresse.php
+
+
+'
 /**
  * Classe client  
  * 
@@ -33,14 +38,13 @@ plus modifiable ensuite.
     private int $_id;
     
     /**@var int */
-    private string $_adresse;
 
-    public function __construct(int $id, string $adresse)
+    public function __construct(int $id, string $info)
     {
 
         $this->setId($id);
 
-        $this->adresse = $adresse;
+        $this->getInfo($info) ;
 
 
     }
@@ -51,12 +55,12 @@ plus modifiable ensuite.
 
     }
 
-    public function getAdresse() :string
+   /* public function getAdresse() :string
     {
 
         return $this->_adresse ;
 
-    }
+    }*/
 
     static function setId(int $id) 
     {
@@ -66,7 +70,7 @@ plus modifiable ensuite.
     }
 
 
-    public function __toString($adresse)
+    /* public function __toString($adresse)
     {
 
         return $this->_adresse;
@@ -83,7 +87,7 @@ plus modifiable ensuite.
     
         return $info;
 
-    }
+    } */
 
   }
 

@@ -12,6 +12,7 @@ class Voiture{
       SetMarque($marque);
       SetModele($modele);
       SetPoids($poids);
+      
    }
 
    ################## SETTERS ##################

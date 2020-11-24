@@ -49,18 +49,14 @@ class Intervenant extends Personne  {
     {   
             
 
-            if ($age<=55)
-
-    {
-            return  $this->_salaire  *  20 / 100) +  ($autrerevenue * 15 / 100 ) ; 
-      
-    }   else
-    
-    {
-
-             $this->($salaire + 10 %) + ($autrerevenue + 7.5 %);
-             return $calculeCharge ; 
-
+        if ($this->_age <= 55)
+        {
+          return ($this->_salaire * 20 / 100) + ($this->_revenue * 15 / 100);
+        } 
+        else 
+        {
+          return ($this->_salaire * 10 / 100) + ($this->_revenue * 7.5 / 100);
+        }
     }      
 
             
