@@ -100,7 +100,7 @@ class Adresse  {
     #######Get Info ###########
 
 
-    public function getInfo (int $numero,string $rue, string $codepostal,string $commune)
+    public function getInfoAdresse (int $numero,string $rue, string $codepostal,string $commune)
     {
 
         $info = '  ' . $numéro . ' ' . $rue . ' ' . $codepostal . ' ' . $commune .;
