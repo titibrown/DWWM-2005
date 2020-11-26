@@ -46,7 +46,7 @@ public function getConfiguration() : string
 
 public function setMaxSpeedSport($maxspeedsport)
 {
-   Voiture.vitesseMax=Moteur.vitesseMax-(Voiture.poidsx 5%
+   Voiture.vitesseMax=Moteur.vitesseMax-(Voiture.poidsx 5% 
 }
 
 
