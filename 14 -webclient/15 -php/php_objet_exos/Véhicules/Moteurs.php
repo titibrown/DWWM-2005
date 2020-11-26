@@ -39,7 +39,7 @@ public function setMoteur ($moteur){
 public function setMaxSpeed(int $maxspeed)
 {
   //  $this->Voiture.maxspeed=Moteur.vitesseMax-(Voiture.poidsx 30%)
-   $this->$maxspeed = $moteur - $poids x 30/100)
+   $this->$maxspeed = ( $moteur - $poids x 30/100);
 
 }
 ################## GETTERS ##################

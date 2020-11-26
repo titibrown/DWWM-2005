@@ -9,9 +9,9 @@ class Voiture{
 
    ################## CONSTRUCTOR ##################
    public function __construct (string $marque, string $modele, int $poids $newMoteur ) {
-      SetMarque($marque);
-      SetModele($modele);
-      SetPoids($poids);
+      $this->SetMarque($marque);
+      $this->SetModele($modele);
+      $this->SetPoids($poids);
       
    }
 
