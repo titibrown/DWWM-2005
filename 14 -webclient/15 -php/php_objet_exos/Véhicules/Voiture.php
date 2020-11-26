@@ -1,5 +1,7 @@
 <?php
 
+require'Moteurs.php';
+
 class Voiture{
    protected string $_marque;
    protected string $_modele;
@@ -8,7 +10,8 @@ class Voiture{
    // protected int $_maxspeed ;
 
    ################## CONSTRUCTOR ##################
-   public function __construct (string $marque, string $modele, int $poids $newMoteur ) {
+   public function __construct (string $marque, string $modele, int $poids $newMoteur )
+    {
       $this->SetMarque($marque);
       $this->SetModele($modele);
       $this->SetPoids($poids);
@@ -16,25 +19,28 @@ class Voiture{
    }
 
    ################## SETTERS ##################
-   public function SetMarque ($marque){
+   public function SetMarque (string $marque)
+   {
       if (empty($marque)){
-         $this->_marque = 'undefined'; // a corriger preciser le plus possible l'erreur
+         $this->_marque = 'Cette marque est Inconnu'; 
       }
       else {
          $this->_marque = $marque;
       }
    }
 
-   public function SetModele($modele){
+   public function SetModele(string $modele)
+   {
       if (empty($modele)){
-         $this->_modele = 'undefined';
+         $this->_modele = 'le modèle en question ne peut être trouvé ';
       }
       else {
          $this->_modele= $modele;
       }
    }
 
-   public function SetPoids($poids){
+   public function SetPoids(int $poids)
+   {
       if (empty($poids)){
          $this->_poids = 1000;
       } 
@@ -44,20 +50,24 @@ class Voiture{
    }
    
    ################## GETTERS ##################
-   public function GetMarque(){
+   public function GetMarque() : string
+   {
       return $this->_marque;
    }
 
-   public function GetModele(){
+   public function GetModele() : string
+   {
       return $this->_modele;
    }
 
-   public function GetPoids(){
+   public function GetPoids() : int
+   {
       return $this->_poids;
    }
 
    ################## METHODS ##################
-   public function GetInfo(){
+   public function GetInfo()
+   {
       return "Marque : $this->_marque\nModele : $this->_modele\nPoids : $this->_poids";
    }
 }
