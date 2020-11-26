@@ -7,15 +7,16 @@ class Adresse  {
     private string $_rue;
     private string $_codepostal;
     private string $_commune;
+    private string $_bis;
 
 
-    public function __construct(int $numero,string $rue,string $codepostal, string $commune)
+    public function __construct(int $numero,string $rue,string $codepostal, string $commune, string $bis = '')
     {
     
-        setNumero($numero);
-        setRue($rue);
-        setCodePostal($codepostal);
-        setCommune($commune);
+        $this->setNumero($numero);
+        $this->setRue($rue);
+        $this->setCodePostal($codepostal);
+        $this->setCommune($commune);
         
     }
 
@@ -36,7 +37,7 @@ class Adresse  {
 
     public function getCodePostal() : string
     {
-        if (preg_match (" \^[0-9]{3,6}[a-z]\ ", $codepostal))
+        
         return $this->_codepostal;
     }
 
@@ -75,9 +76,9 @@ class Adresse  {
     }
     public function setCodePostal (string $_codepostal)
     {
-        if(empty($_codepostal))
-        {
-            $this->_codepostal =' Le code postal est vide '
+        if (preg_match (" /^[0-9]{3,6}[a-z]/ ", $codepostal)) // / debut regex
+        throw new Exception ("Code postal invalide")
+        
         }else
         {
             $this->_codepostal = $codepostal;
