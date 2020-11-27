@@ -10,19 +10,19 @@ class Voiture{
    // protected int $_maxspeed ;
 
    ################## CONSTRUCTOR ##################
-   public function __construct (string $marque, string $modele, int $poids $newMoteur )
+   public function __construct (string $marque, string $modele, int $poids, string $marqueMoteur, int $maxSpeed)
     {
       $this->SetMarque($marque);
       $this->SetModele($modele);
       $this->SetPoids($poids);
-      
+      $this->SetMoteur($marqueMoteur, $maxSpeed);
    }
 
    ################## SETTERS ##################
    public function SetMarque (string $marque)
    {
       if (empty($marque)){
-         $this->_marque = 'Cette marque est Inconnu'; 
+         $this->_marque = 'Cette marque est inconnue'; 
       }
       else {
          $this->_marque = $marque;
@@ -32,7 +32,7 @@ class Voiture{
    public function SetModele(string $modele)
    {
       if (empty($modele)){
-         $this->_modele = 'le modèle en question ne peut être trouvé ';
+         $this->_modele = 'Le modèle en question ne peut être trouvé ';
       }
       else {
          $this->_modele= $modele;
@@ -44,11 +44,17 @@ class Voiture{
       if (empty($poids)){
          $this->_poids = 1000;
       } 
-      else {
+      else 
+      {
          $this->poids = $poids;
       }
    }
    
+   public function SetMoteur(string $marqueMoteur, int $maxSpeed)
+   {
+      $this->
+   }
+
    ################## GETTERS ##################
    public function GetMarque() : string
    {
@@ -94,6 +100,9 @@ Une VoitureDeCourse est une Voiture performante. Elle diffère d’une voiture c
 
 
 */
+
+
+        //  $this->Voiture.maxspeed=Moteur.vitesseMax-(Voiture.poidsx 30%)
 
 
 

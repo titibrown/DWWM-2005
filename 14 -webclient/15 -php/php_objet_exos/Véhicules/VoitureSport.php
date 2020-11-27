@@ -16,7 +16,8 @@ class VoitureSport extends Voiture {
    protected string $_configuration ;
 
 
-public function __construct (int $maxspeedsport, string $configuration) {
+public function __construct (int $maxspeedsport, string $configuration)
+ {
   
   
    $this->setConfiguration($configuration);
@@ -46,7 +47,7 @@ public function getConfiguration() : string
 
 public function setMaxSpeedSport($maxspeedsport)
 {
-   Voiture.vitesseMax=Moteur.vitesseMax-(Voiture.poidsx 5% 
+   Voiture.$this->$maxspeedsport=Moteur.vitesseMax-(Voiture.poidsx 5% 
 }
 
 
