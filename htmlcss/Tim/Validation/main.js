@@ -15,14 +15,21 @@
 inputText = document.querySelector('#nameContainer input[type="text]');
     console.log()
 
-    if ( /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)
-    name.style.backgroundColor ="green";
-    else name.style.backgroundColor ="red";
-
-
+    
         PressEnter.addEventListener('keypress',(event) =>{
+
+           
             console.log(event);
         })
+
+        
+function verifName(name) {
+    if (/[a-zA-Z]/){
+        
+    }
+}
+
+
 
 
 
