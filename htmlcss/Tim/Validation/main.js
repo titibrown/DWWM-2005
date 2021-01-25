@@ -24,19 +24,10 @@ inputText = document.querySelector('#nameContainer input[type="text]');
 
         
 function verifName(name) {
-    if (/[a-zA-Z]/){
-        
+    if ( name !== /[a-zA-Z]/){
+        alert("Your name can only include Alfa.....Caract...." )
     }
 }
 
-
-
-
-
-
-        inputEmail = document.querySelector('#emailContainer input[type="email"]');
-    console.log()
-
-
-  
+ 
      
