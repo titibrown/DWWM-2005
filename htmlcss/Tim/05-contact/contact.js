@@ -23,6 +23,13 @@
 /* votre code ici */
 
 
+document.addEventListener()
+
+
+}
+
+}
+
 
 
 
@@ -38,11 +45,11 @@ contactSubmit.addEventListener('submit', (event) => {
 
     console.log(event);
 
-  var forValid =document.getElementById('button_send');
+  var forValid = document.getElementById('button_send');
   var name = document.getElementById('name');
-  var email =document.getElementById('email')
-  var telephone =document.getElementById('telephone')
-  var message =document.getElementById('message')
+  var email = document.getElementById('email')
+  var telephone = document.getElementById('telephone')
+  var message = document.getElementById('message')
 
 formValid.addEventListener('click',validation);
 
@@ -50,7 +57,7 @@ formValid.addEventListener('click',validation);
 
 function validation(event){
 
-        if ()
+        if (name==true && email ==)
 
 
 }
