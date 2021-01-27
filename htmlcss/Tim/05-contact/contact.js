@@ -23,12 +23,29 @@
 /* votre code ici */
 
 
-document.addEventListener()
+document.addEventListener(){
 
 
+/*
+    if(event.key.match(event.target.pattern)) {
+        console.log('ok');
+    } else{
+        console.log('error');
+    }
+
+    let myRegex = new RegExp(event.target.pattern);
+
+    if(myRegex.test(event.target.value)) {
+        console.log('ok');
+    } else {
+        console.log('error');
+    }
+*/
+
+
+  
 }
 
-}
 
 
 
