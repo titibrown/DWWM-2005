@@ -23,24 +23,11 @@
 /* votre code ici */
 
 
-document.addEventListener(){
+document.addEventListener();
+{
 
 
-/*
-    if(event.key.match(event.target.pattern)) {
-        console.log('ok');
-    } else{
-        console.log('error');
-    }
 
-    let myRegex = new RegExp(event.target.pattern);
-
-    if(myRegex.test(event.target.value)) {
-        console.log('ok');
-    } else {
-        console.log('error');
-    }
-*/
 
 
   
@@ -68,15 +55,44 @@ contactSubmit.addEventListener('submit', (event) => {
   var telephone = document.getElementById('telephone')
   var message = document.getElementById('message')
 
-formValid.addEventListener('click',validation);
+formValid.addEventListener('submit',validation);
 
 
 
 function validation(event){
 
-        if (name==true && email ==)
+        if (nameValue === null){
+
+            setErrorFor(name,'Name is required');
+        }else{
+            setSucessfor(name);
+        }
+              
+        if(emailValue === null){
+            setErrorFor(email,'email is required');
+        }else if (!isemailvalid(emailValue)){
+
+                setErrorFor(email,'Not a valid Email');
+        }else{
+
+            setSucessfor(email);
+        }
 
 
-}
+        if(telephonelValue === null){
+            setErrorFor(telephone,'telephone is required');
+        }else{
+            setSucessfor(telephone);
+        }
 
-});
+        if(messageValue ==={
+           
+        }
+            setSucessfor(message);
+        
+
+        function isemailvalid(email){
+
+            return "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$".test(email);
+        }
+    }

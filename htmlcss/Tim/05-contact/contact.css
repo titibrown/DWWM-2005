@@ -90,10 +90,24 @@ button[type="submit"]:hover {
 
 /* TODO : ajouter les règles pour le message indiquant que le formulaire est valide. */
 .success {
+
+    border: 2px solid green;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
     /* votre code ici */
 }
 
 /* TODO : ajouter les règles pour les messages d'erreur */
 .error {
+
+    border: 2px solid red;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
     /* votre code ici */
 }
