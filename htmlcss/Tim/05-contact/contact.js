@@ -23,14 +23,30 @@
 /* votre code ici */
 
 
-document.addEventListener();
+
+
+document.addEventListener("keyup",(event) => 
 {
 
+if(!event.target.value.match(event.target.pattern,'contactName')){
+    
+ 
+}
+
+if(!event.target.value.match(event.target.pattern, 'contactEmail')){
+   
+}
+
+if(!event.target.value.match(event.target.pattern, 'contactPhone')){
+    
+
+}
+
+if(!event.target.value.match(event.target.pattern, 'contactMessage')){
 
 
+}
 
-
-  
 }
 
 
@@ -42,6 +58,7 @@ document.addEventListener();
  */
 
 // sélection du formulaire
+
 const contactForm = document.getElementById('contactForm');
 
 // évènement déclenché à la soumission du formulaire (submit)
