@@ -1,5 +1,5 @@
 using System;
-
+/*
 //https://www.youtube.com/watch?v=tCM63nMetaU&list=PLrSOXFDHBtfGBHAMEg9Om9nF_7R7h5mO7&index=10&ab_channel=FormationVid%C3%A9o
 namespace App
 // Utiliser une structure : Besoin d'une info personalisé , aucune modification requise apès alors Oui 
@@ -14,7 +14,7 @@ namespace App
 
        }
        public override string ToString() => $"disque de marque {Brand}, d'une capacité de {Capacity}GO."; // réecriture
-    }
+    }*/
       
 /* class Base{
 
@@ -29,7 +29,7 @@ namespace App
     Console.WriteLine(d);
    // Console.WriteLine(d2.capacity);
     }
-}*/
+}
 
 class Base
 {
@@ -52,6 +52,6 @@ static void Main(string[] args)
 
 
 
-
+*/
 
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/*
 namespace ClassLibraryInterfaceBusinessDatabase
 {
     public struct StructSupplier
@@ -60,4 +61,4 @@ namespace ClassLibraryInterfaceBusinessDatabase
         }
         #endregion
     }
-}
+}*/
