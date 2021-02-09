@@ -22,3 +22,82 @@ chien.aboyer();
 
 // magicien.attaquer();
 // guerrier.attaquer();
+
+
+
+
+
+
+
+
+
+
+
+
+// Les Set
+
+
+let nombres = [10, 45, 75, 10, 24, 45];
+// let monSet  = new Set(nombres);
+let monSet = new Set();
+
+monSet.add('70');
+monSet.add(87);
+// monSet.delete(87);
+
+console.log(monSet.size);
+
+
+// Map 
+
+let utilisateurs = new Map();
+
+utilisateurs.set('Mark Zuckerberg', {
+    email: 'mark@facebook.com',
+    poste: 'PDG',
+});
+
+utilisateurs.set('Bill Gates', {
+    email: 'bill@gatesnotes.com',
+    poste: 'Sauver le monde',
+});
+
+// utilisateurs.delete('Bill Gates');
+
+console.log(utilisateurs);
+
+
+// weakset
+
+
+let voitureA = {
+    constructeur: 'Tesla',
+    modele: 'Cybertruck'
+  }
+  let voitureB = {
+    constructeur: 'Renault',
+    modele: 'Espace'
+  }
+  
+  let voitures = new WeakSet([voitureA, voitureB]);
+  console.log(voitures)
+
+
+  //Weakmap
+
+
+  let voitures = new WeakMap();
+
+let index = {
+    id: 1
+}
+
+let voitureA = {
+    constructeur: 'Tesla',
+    modele: 'Cybertruck'
+}
+
+voitures.set(index, voitureA);
+
+// voitures.delete(index);
+console.log(voitures);
