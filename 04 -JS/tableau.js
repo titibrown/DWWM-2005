@@ -44,3 +44,50 @@ let monTableauAssociatif = {
 };
 
 
+// Ajouter 
+
+
+let monTableau = ['un', 'deux', 'trois', 'quatre'];
+monTableau.push('cinq');
+monTableau.unshift('zero');
+// console.log(monTableau);
+
+let monTableau2D = [
+    ['Mark', 'Jeff', 'Bill'],
+    ['Zuckerberg', 'Bezos', 'Gates']
+];
+monTableau2D[1].unshift('test');
+// console.log(monTableau2D);
+
+let monTableauAssociatif = {
+    'prenom' : 'Mark',
+    'nom'    : 'Zuckerberg',
+    'poste'  : 'PDG de Facebook'
+};
+monTableauAssociatif['nationalite'] = 'Américaine';
+console.log(monTableauAssociatif);
+
+// Delete
+
+delete(monTableauAssociatif.poste);
+// console.log(monTableauAssociatif);
+
+
+//retrouver un Index : 
+
+let monTableau = ['un', 'deux', 'trois', 'quatre'];
+console.log(monTableau.indexOf('deux')); // retourne 1
+
+
+
+//concaténer un tableau : Tableau simple ou double dimenssion
+
+
+let monTableau = ['un', 'deux', 'trois', 'quatre'];
+// console.log(monTableau.join(' / '));
+
+let monTableau2D = [
+    ['Mark', 'Jeff', 'Bill'],
+    ['Zuckerberg', 'Bezos', 'Gates']
+];
+console.log(monTableau2D.join(' / '));
