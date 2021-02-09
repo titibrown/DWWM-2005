@@ -22,7 +22,7 @@ function division(nbA, nbB){
     return nbA / nbB;
 }
 
-function calculAir(nbA,nbB){
+/*function calculAir(nbA,nbB){
 
     return 
 }
@@ -30,5 +30,5 @@ function calculAir(nbA,nbB){
 function calculSurface(){
     return  
 }
-
+*/
 
