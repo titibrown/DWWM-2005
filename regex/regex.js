@@ -33,3 +33,9 @@ console.log("Extraire tous les Matchs")
 
 console.log(texte.match(/\+33\(([1-9])\)(\d{2})(\d{2})(\d{2})(\d{2})/g))   // Flag G permet de ne pas s'aêter au premier Numéro 
 
+
+console.log("Remplacer les matchs par un texte statique")
+
+
+console.log(texte.replace(/\+33\(([1-9])\)(\d{2})(\d{2})(\d{2})(\d{2})/g, '[Number]'))
+

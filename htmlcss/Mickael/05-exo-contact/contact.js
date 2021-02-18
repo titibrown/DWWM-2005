@@ -22,7 +22,13 @@
 
 /* votre code ici */
 
+function validateName()
+{
+    return document.getElementById('contactName').value.match(/^[A-Za-z0-9]+$/) ? true : false;
+}
 
+
+document.getElementById('contactName').addEventListener('keyup', validateName);
 
 
 
@@ -34,9 +40,44 @@
 const contactForm = document.getElementById('contactForm');
 
 // évènement déclenché à la soumission du formulaire (submit)
-contactSubmit.addEventListener('submit', (event) => {
+contactForm.addEventListener('submit', (event) => {
 
+    event.preventDefault();
     console.log(event);
+    
+
+    if(validateName()) {
+
+    }
+    
+    let data = new FormData(contactForm);
+
+
+    // contrôles ici
+
+
+    let myPromise = fetch(
+        'contact_validation.php',
+        {
+            method: "post",
+            body: data 
+        }
+    );
+
+    myPromise.then((response) => {
+        if(response.ok) {
+            console.log(response);
+            return response.text();
+        }
+        else {
+            console.log("Erreur " + response.status);
+        }
+    })
+    .then((text) => {
+        console.log(text);
+    });
+
+    console.log(data);
 
      /**
       * TODO: Validation des 4 champs du formulaire. 
