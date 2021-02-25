@@ -1,4 +1,3 @@
-
 class User
 {
     constructor(id, username, password)
@@ -42,4 +41,3 @@ class Db
 }
 
 export { User, Db }
-

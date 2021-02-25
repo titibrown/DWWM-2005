@@ -1,3 +1,6 @@
+import { User, Db } from './Models/Db.js';
+
+
 const MyApp = {
     data() {
         return {
@@ -7,17 +10,33 @@ const MyApp = {
             password: '',
             message: '',
             persist: false,
-            isAuthenticated: false
         }
     },
 
+   
+
     created() 
     {
-        isAuthenticated// requêtes réseau (ajax etc...)
+        // requêtes réseau (ajax etc...)
+
+        this.users = this.db.getAll();
+
+        if(localStorage.getItem("username") !== null) {
+            this.db.currentUser = this.users.find(toto => toto.username === localStorage.getItem("username"));
+/*
+            for(let toto of this.users) {
+                if(toto.username === localStorage.getItem("username")) {
+                    let user = toto;
+                    break;
+                }
+            }*/
+
+        }
+        
     },
 
     mounted() {
-        this.users = this.db.getAll();
+        
     },
 
     computed: {
@@ -27,6 +46,12 @@ const MyApp = {
 
         test() {
             return this.username.substring(0, 2).toUpperCase();
+        },
+
+        currentUsername()
+        {
+            return this.db.currentUser 
+            ? this.db.currentUser.username : 'Anonyme';
         }
     },
 
@@ -72,20 +97,26 @@ var maFonction = function()
 {
     this.name = '';
 }
+
 function maFonction()
 {
     this.name = '';
 }
+
 maFonction = () => {
     this.name = '';
 }
+
 class maFonction {
     constructor()
     {
         this.name = '';
     }
 }
-var maVar = maFonction();
-var myVar =  new maFonction();
-*/
 
+
+var maVar = maFonction();
+
+var myVar =  new maFonction();
+
+*/
