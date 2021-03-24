@@ -1,26 +1,25 @@
 
+import { bakery }from "./models/bakery.js";
 
 
-class Bakery{
 
-constructor(){
-
-        this.level=0;
-        this.level_price=100;
-
-        this.mills=1;
-        this.mills_price=80;
-
-        this.golds=100;
-
-        this.flour=50;
-
-        this.baguettes=0;
-    
-
+const myBaker = {
+ data(){
+     return{
+         bakery: new bakery(),
+     }
+ }
 
 }
 
+methods : {
+
+startStop: () => {
+
+        if(this.bakery.running)
+}
 
 }
 
+const appBaker = Vue.createApp(myBaker);
+appBaker.mount('#app')

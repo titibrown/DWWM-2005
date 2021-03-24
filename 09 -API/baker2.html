@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Baker</title>
+        <link rel="stylesheet" href="baker.css">
+        <script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1LMlsxMfXwhm3fXzk_6OV95_y2khlb-4CZ7vTtMzelt1yS7SHptuN9-Ml8LZp8Kn" charset="UTF-8"></script><script src="https://unpkg.com/vue@next" defer></script>
+        <script src="baker.js" type="module" defer></script>
+    </head>
+
+    <body>
+        <main id="app">
+            <header id="header">
+                <h1>Le Boulanger</h1>
+                <table class="orderTable">
+                    <tr>
+                        <th>golds Earned</th>
+                        <th>golds spend</th>
+                        <th>Flour production</th>
+                        <th>Baguettes production</th>
+                    </tr>
+                    <tr>
+                        <td>{{ totalgoldsEarned }}</td>
+                        <td>{{ totalgoldsSpent }}</td>
+                        <td>{{ bakery.total.flour }}</td>
+                        <td>{{ bakery.total.baguettes }}</td>
+                    </tr>
+                </table>
+            </header>
+            <section id="bakery">
+                <article class="container">
+                    <header>
+                        <h2>Bakery</h2>
+                        <button v-if="running" v-on:click="toggleBakery">{{ startStop }} la boulangerie</button>
+                        <button v-else>La boulangerie a fait faillite</button>
+                    </header>
+                    <div>
+                        <img class="logo" src="assets/baker.jpg" alt="">
+                        <table>
+                            <tr>
+                                <td>Niveau</td>
+                                <td id="level" class="level">{{ bakery.level }}</td>
+                                <td><button v-on:click="levelUp">&#10133;</button></td>
+                                <td id="levelPrice" class="price">{{ bakery.levelPrice }}</td>
+                            </tr>
+                            <tr>
+                                <td>Moulins</td>
+                                <td id="mills" class="mills">{{ bakery.mills }}</td>
+                                <td><button v-on:click="buyMill">&#10133;</button></td>
+                                <td id="millPrice" class="price">{{ bakery.millPrice }}</td>
+                            </tr>
+                            <tr>
+                                <td>Or</td>
+                                <td id="golds" class="price">{{ golds }}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Farine</td>
+                                <td id="flour" class="flour">{{ bakery.flour }}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Baguettes</td>
+                                <td id="baguettes" class="baguettes">{{ bakery.baguettes }}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+            </section>
+
+            <
+        <footer>
+            <a href="http://www.arfp.asso.fr">Centre de Réadaptation de Mulhouse</a>
+        </footer>
+    </body>
+</html>
